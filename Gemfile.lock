@@ -51,8 +51,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mongoid
   mongoid-rspec
   rspec
-  rspec-core
   simplecov
   sinatra

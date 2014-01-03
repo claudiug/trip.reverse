@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
-gem 'rspec-core'
+gem 'mongoid'
+
 group :test do
    gem 'rspec'
    gem 'mongoid-rspec'
