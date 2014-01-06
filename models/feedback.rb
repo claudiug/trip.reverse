@@ -6,5 +6,8 @@ class Feedback
   field :is_new, type: Boolean, default: true
   field :email, type: String
   field :content, type: String
+  
+  validates_inclusion_of :is_new, in:[true, false]
+
  
 end

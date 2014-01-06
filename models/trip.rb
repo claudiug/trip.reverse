@@ -8,6 +8,6 @@ class Trip
   field :active, type: Boolean, default: false
   
   validates :name, presence: true, uniqueness:true 
-  
+  validates_inclusion_of :active, in:[true, false]
   index({name:1}, {unique:true})
 end
