@@ -11,6 +11,6 @@ describe  Trip do
   
 
   it { should validate_uniqueness_of(:name)}
-  it { should validate_inclusion_of(:active).to_allow([true, false]) }
+  it {should have_field(:active).of_type(Boolean).with_default_value_of(false)}
 
 end
